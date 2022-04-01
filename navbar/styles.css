@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  background-color: cyan;
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  margin-left: 1rem;
+  width: 20%;
+}
+ul {
+  /* display: flex;
+  align-items: center; */
+  /* overflow: scroll; */
+  list-style-type: none;
+  position: fixed;
+  width: 100%;
+  height: 92vh;
+  /* border: 1px solid black; */
+  top: -100%;
+  /* right: -100%; */
+  text-align: center;
+  background-color: cyan;
+  transition: linear 0.2s;
+  z-index: -1;
+}
+.ulShow {
+  /* right: 0%; */
+  top: 8vh;
+}
+li {
+  /* background-color: blue; */
+  /* height: 100%; */
+  margin: 2rem 0;
+  width: 100%;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  /* background-color: lightcoral; */
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0;
+}
+a:hover {
+  background-color: lightseagreen;
+}
+button {
+  background-color: lightcoral;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#menu {
+  display: block;
+}
+#close {
+  display: none;
+  transition: all 0.38s;
+}
+#close:hover,
+#menu:hover {
+  transform: rotate(180deg);
+}
+
+button:hover {
+  background-color: lightseagreen;
+}
+@media screen and (min-width: 500px) {
+  ul {
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    list-style-type: none;
+    width: 50%;
+    top: 0;
+    right: 0;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    border: 1px solid black;
+    text-align: center;
+    background-color: cyan;
+    transition: none;
+  }
+  .ulShow {
+    top: 0;
+  }
+  li {
+    margin: 0;
+    height: 100%;
+  }
+  button {
+    display: none;
+  }
+  a {
+    background-color: lightcoral;
+  }
+}
