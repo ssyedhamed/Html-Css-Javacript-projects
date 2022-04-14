@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  /* border: 1px solid black; */
+  width: 80%;
+  min-height: 35vh;
+  position: absolute;
+  margin: 5% auto;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -10rem);
+  text-align: center;
+  background-color: rgba(54, 64, 66, 0.425);
+  border-radius: 20px;
+}
+.heading {
+  color: brown;
+  margin-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px dashed black;
+  /* padding: 1px auto; */
+}
+.container {
+  width: 100%;
+  /* border: 1px solid black; */
+  /* min-height: 100%; */
+  padding: 5px;
+  position: relative;
+}
+.questions {
+  color: black;
+  background-color: cyan;
+  display: flex;
+  justify-content: space-evenly;
+  height: 3rem;
+  align-items: center;
+  margin: 0 auto 0px auto;
+  user-select: none;
+  border-radius: 20px;
+}
+.questions > p {
+  margin-right: 15%;
+}
+.btns {
+  position: absolute;
+  right: 5%;
+  /* border: 1px solid black; */
+  outline: 1px blue;
+  width: 3rem;
+  height: 2rem;
+  margin: 10px auto;
+}
+.plus-icon,
+.minus-icon {
+  position: absolute;
+  border: 1px solid black;
+  cursor: pointer;
+
+  transition: all 0.38s;
+
+  outline: none;
+  /* border: none; */
+  border-radius: 10px;
+  color: black;
+  background-color: lightgreen;
+}
+.plus-icon {
+  right: 1rem;
+  width: 2.5rem;
+  height: 2rem;
+}
+.minus-icon {
+  right: 1rem;
+  top: -2.5rem;
+  width: 2.5rem;
+  height: 2rem;
+}
+/* 
+.plus-icon {
+  display: block;
+  /* display: none; */
+/* } */
+/* .minus-icon { */
+/* color: red; */
+/* display: block; */
+/* z-index: 10; */
+/* display: none; */
+/* } */
+.plus-icon:hover,
+.minus-icon:hover {
+  background-color: lightyellow;
+  color: black;
+}
+.qna {
+  background-color: lightyellow;
+  /* border: 1px dashed blue; */
+  border-radius: 20px;
+  border-top: none;
+  position: relative;
+  margin-bottom: 20px;
+  min-height: 2rem;
+}
+.qna:last-child {
+  margin-bottom: 2px;
+}
+.answers {
+  color: brown;
+  /* padding: 10px; */
+  /* height: 0; */
+  /* overflow: hidden; */
+  /* display: block; */
+  display: none;
+  position: relative;
+}
+
+.showAnswers {
+  padding: 10px;
+  height: auto;
+  display: block;
+
+  /* margin: 1.4rem auto; */
+}
+.answers > p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
